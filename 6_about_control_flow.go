@@ -5,9 +5,9 @@ import "fmt"
 func aboutControlFlow() {
 	{
 		a, b, c := 1, 2, 3
-		assert(a == __int__) // multiple assignment
-		assert(b == __int__) // can make
-		assert(c == __int__) // life easier
+		assert(a == 1 // multiple assignment
+		assert(b == 2) // can make
+		assert(c == 3) // life easier
 	}
 
 	var str string
