@@ -1,7 +1,5 @@
 package go_koans
 
-import "fmt"
-
 func aboutSlices() {
 	fruits := []string{"apple", "orange", "mango"}
 
@@ -18,8 +16,7 @@ func aboutSlices() {
 	pregnancy_slots = append(pregnancy_slots, "baby2")
 	pregnancy_slots = append(pregnancy_slots, "baby3")
 	pregnancy_slots = append(pregnancy_slots, "baby4")
-	assert(len(pregnancy_slots) == 7) // slices can be extended with append(), much like realloc in C
-	fmt.Print(cap(pregnancy_slots))
+	assert(len(pregnancy_slots) == 7)  // slices can be extended with append(), much like realloc in C
 	assert(cap(pregnancy_slots) == 12) // but with better optimizations
 
 	pregnancy_slots = append(pregnancy_slots, "another baby!?", "yet another, oh dear!", "they must be Catholic")
